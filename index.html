@@ -1,7 +1,7 @@
-<!DOCTYPE html
+<!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,14 +22,14 @@ html{
 }
 
 body{
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:#fff7df;
     color:#171717;
     overflow-x:hidden;
 }
 
 
-/* ===== NAVBAR ===== */
+/* ===== NAVIGATION ===== */
 
 nav{
     position:sticky;
@@ -75,8 +75,212 @@ nav a:hover{
     display:flex;
     flex-direction:column;
     justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:70px 20px;
+
+    background:#b8ff5a;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.warning{
+    background:#171717;
+    color:#ffe600;
+
+    padding:10px 18px;
+
+    font-weight:bold;
+
+    transform:rotate(-3deg);
+
+    box-shadow:6px 6px 0 #ff477e;
+
+    margin-bottom:30px;
+}
+
+#home h1{
+    font-size:clamp(55px,12vw,120px);
+
+    line-height:.85;
+
+    font-weight:1000;
+
+    letter-spacing:-6px;
+
+    text-transform:uppercase;
+
+    text-shadow:
+        6px 6px 0 #ff477e,
+        11px 11px 0 #171717;
+}
+
+#home h1 span{
+    color:#ffe600;
+    -webkit-text-stroke:3px #171717;
+}
+
+#home p{
+    max-width:600px;
+
+    margin-top:35px;
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    font-weight:bold;
+}
+
+.enter{
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:16px 25px;
+
+    background:#ff477e;
+    color:white;
+
+    border:4px solid #171717;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    box-shadow:7px 7px 0 #171717;
+}
+
+.enter:hover{
+    transform:translate(5px,5px);
+    box-shadow:2px 2px 0 #171717;
+}
+
+
+/* ===== FLOATING STICKERS ===== */
+
+.sticker{
+    position:absolute;
+
+    background:white;
+
+    border:3px solid #171717;
+
+    padding:12px 16px;
+
+    font-weight:bold;
+
+    box-shadow:5px 5px 0 #171717;
+}
+
+.s1{
+    top:20%;
+    left:7%;
+    transform:rotate(-8deg);
+}
+
+.s2{
+    top:30%;
+    right:7%;
+    background:#ffe600;
+    transform:rotate(8deg);
+}
+
+.s3{
+    bottom:12%;
+    left:12%;
+    background:#00d9ff;
+    transform:rotate(5deg);
+}
+
+
+/* ===== GENERAL SECTIONS ===== */
+
+section{
+    padding:90px 7%;
+}
+
+.heading small{
+    color:#ff477e;
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+}
+
+.heading h2{
+    font-size:clamp(40px,7vw,75px);
+
+    line-height:.9;
+
+    margin-top:15px;
+
+    margin-bottom:45px;
+
+    text-transform:uppercase;
+
+    letter-spacing:-4px;
+}
+
+
+/* ===== MEMES ===== */
+
+#memes{
+    background:#ff477e;
+}
+
+.meme-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+}
+
+.meme{
+    background:white;
+
+    border:5px solid #171717;
+
+    padding:15px;
+
+    box-shadow:9px 9px 0 #171717;
+
+    transition:.3s;
+}
+
+.meme:hover{
+    transform:translateY(-12px) rotate(2deg);
+
+    box-shadow:14px 14px 0 #ffe600;
+}
+
+.meme-img{
+    height:230px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    border:3px solid #171717;
+
+    font-size:24px;
+
+    font-weight:bold;
+}
+
+.m1 .meme-img{
+    background:#ffe600;
+}
+
+.m2 .meme-img{
    
 
-        
-        
-        
+    

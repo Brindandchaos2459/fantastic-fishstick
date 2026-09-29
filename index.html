@@ -1,3 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Me & My Chaos 🤪</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff4c2;
+            color: #222;
+            text-align: center;
+        }
+
+        header {
+            padding: 70px 20px;
+            background: #ff6b6b;
+            border-bottom: 6px solid #222;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 25px;
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            transform: rotate(-2deg) scale(1.05);
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .card {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 25px;
+            background: white;
+            border: 4px solid #222;
+            border-radius: 20px;
+            box-shadow: 8px 8px 0 #222;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        .chaos {
+            font-size: 60px;
+            margin: 10px;
+        }
+
+        #fact {
+            font-size: 20px;
+            min-height: 30px;
+        }
+
+        footer {
+            padding: 30px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="chaos">🤪💥🧠</div>
+
+        <h1>WELCOME TO MY CHAOS</h1>
+
+        <p>
+            A completely unnecessary website that I made anyway.
+        </p>
+
+        <button class="button" onclick="welcome()">
+            DON'T CLICK THIS 👀
+        </button>
+
+        <p id="message"></p>
+
+    </header>
+
+
+    <section>
+
+        <div class="card">
+
+            <h2>👋 So... Who Am I?</h2>
+
+            <p>
+                Honestly, even I am still figuring that out.
+            </p>
+
+            <p>
+                Professional overthinker.<br>
+                Part-time genius.<br>
+                Full-time source of unnecessary chaos.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>🎲 Random Fact Generator</h2>
+
+            <p id="fact">
+                Click the button. You know you want to.
+            </p>
+
+            <button class="button" onclick="randomFact()">
+                GIVE ME A RANDOM FACT 🎲
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>🚨 IMPORTANT ANNOUNCEMENT</h2>
+
+            <p>
+                You have officially spent time on a website
+                that didn't need to exist.
+            </p>
+
+            <p>
+                Congratulations. 🫡
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        Made with questionable decisions and lots of ☕😂
+
+    </footer>
+
+
+    <script>
+
+        function welcome() {
+
+            document.getElementById("message").innerText =
+                "I TOLD YOU NOT TO CLICK IT 😭";
+
+        }
+
+
+        function randomFact() {
+
+            const facts = [
+
+                "Octopuses have three hearts. 🐙",
+
+                "Your brain is currently reading this sentence. 🧠",
+
+                "Somewhere, someone is probably procrastinating right now.",
+
+                "You clicked a button on a random website. Respect. 🫡",
+
+                "This website was created for absolutely no reason. 😂"
+
+            ];
+
+            const random =
+                Math.floor(Math.random() * facts.length);
+
+            document.getElementById("fact").innerText =
+                facts[random];
+
+        }
+
+    </script>
+
+</body>
+</html>
 
 <!DOCTYPE html>
 <html>
